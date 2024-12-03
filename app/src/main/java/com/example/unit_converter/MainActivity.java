@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 String numbers = enterNumber.getText().toString();
                 float number = Float.parseFloat(numbers);
                 float toInch = number * (float)39.3701;
-                String resultInInch = String.valueOf(toInch);
+                String resultInInch = String.format("%.2f",toInch);
                 String displayInInch = numbers + " metres = " + resultInInch + " inches. ";
                 resultDisplay.setText(displayInInch);
                 resultDisplay.setVisibility(View.VISIBLE);
